@@ -25,6 +25,7 @@ Update the `default.conf` file with the absolute paths to your local tool binari
 ppcheck_codes_folder=/path/to/ppcheck
 hotpies_codes_folder=/path/to/hotpies
 freesasa_path=/path/to/freesasa
+```
 
 ### External Dependencies
 This pipeline integrates several high-quality external tools. Please ensure you credit the original authors if you use the SASA or visualization features:
