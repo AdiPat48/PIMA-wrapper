@@ -32,6 +32,6 @@ This pipeline integrates several high-quality external tools. Please ensure you 
 
 * **FreeSASA:** Mitternacht S. FreeSASA: An open source C library for solvent accessible surface area calculations. *F1000Research*. 2016;5:189.
 * **Biopython:** Cock PJ, et al. Biopython: freely available Python tools for computational molecular biology and bioinformatics. *Bioinformatics*. 2009;25(11):1422-3.
-* **Naccess:** Hubbard, S. J., & Thornton, J. M. (1993). Department of Biochemistry and Molecular Biology, University College London.
+* **Naccess:** Hubbard, S. J., & Thornton, J. M. (1993). NACCESS, Computer Program. Department of Biochemistry and Molecular Biology, University College London.
 
 
