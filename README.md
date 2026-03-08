@@ -26,7 +26,7 @@ ppcheck_codes_folder=/path/to/ppcheck
 hotpies_codes_folder=/path/to/hotpies
 freesasa_path=/path/to/freesasa
 
-## External Dependencies
+### External Dependencies
 This pipeline integrates several high-quality external tools. Please ensure you credit the original authors if you use the SASA or visualization features:
 
 * **FreeSASA:** Mitternacht S. FreeSASA: An open source C library for solvent accessible surface area calculations. *F1000Research*. 2016;5:189.
