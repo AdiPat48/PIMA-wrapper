@@ -1,4 +1,4 @@
-# PIMA-Wrapper: High-Throughput Analysis of Protein Interfaces
+# PIMA: High-Throughput Analysis of Protein Interfaces
 
 **PIMA-Wrapper** is a professional-grade Python suite designed for the large-scale structural analysis of macromolecular assemblies. It serves as a high-performance local implementation of the **PIMA** (Protein-Protein Interaction in Macromolecular Assembly) and **PPCheck** methodologies developed at **Prof. R. Sowdhamini’s Lab, NCBS**.
 
