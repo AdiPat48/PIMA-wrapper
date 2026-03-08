@@ -1,0 +1,84 @@
+
+Thank you for your interest in the program Naccess. If you have not
+already, please complete the Confidentiality form and return it to
+me, Simon Hubbard, at Manchester (for address see below). Please 
+don't fax it, ordinary post or scanned PDF is fine - you don't have to
+send it via expensive courier services !)
+
+Once you have downloaded the file, you need to decrypt it. The key 
+is "nac97". To decrypt, simply use one of the following:
+
+The popular archiving utility RAR is probably the easiest and has password 
+protection available. 
+
+rar e -p"key" naccess.rar 
+
+(no further unzipping is required)
+
+crypt nac97 < naccess.tar.gz.enc > naccess.tar.gz
+
+(or use mcrypt or des on the appropriate file if you don't have 
+crypt. mcrypt is open source and available for most platforms)
+
+mcrypt -d -k nac97 < naccess.tar.gz.nc > naccess.tar.gz
+
+You may then uncompress and untar the file in the normal way via:
+
+gzip -dc naccess.tar.gz | tar -xvf -
+
+You should end up with a new subdirectory containing all the files, and
+installation instructions you need. If you have any problems or
+further questions, please email me at the address below, but please
+try and make sure you have exhausted all possibilities before
+asking me for help, as I don't really offer support. ie. please read
+the latest README file (the one on the website at the following URL has
+the most information, including some answers to a few common questions.)
+
+http://www.bioinf.manchester.ac.uk/naccess/
+
+I've also listed a few common problems, issues and queries below, taken from the website
+README
+
+common compilation problems
+---------------------------
+some modern Fortran compilers don't like my old	code - a common	problem	is
+the output to the log file on fortran channel 4. e.g. write(4,'(a,i)') and lines like
+this. A	simple fix is to comment them out with a 'C' in	the first column, or change them
+to a generic format, write(4,*). The former means you don't get	the logfile output
+from that line,	and the	latter means the format	is not quite so	pretty,	but in both
+cases it should	all still work.
+
+Relative accessibilities (greater than 100%?)
+---------------------------------------------
+Relative accessibilities are calculated for each amino acid in the protein
+by expressing the various summed residue accessible surfaces as a percentage
+of the that observed in a ALA-X-ALA tripeptide. The tripeptides were built
+using the QUANTA molecular graphics package, in extended conformations, so
+as to expose the central X residue in the tripeptide as much as would
+normally be possible in a protein. Because of unusual bond angles, bond
+lengths and distorted geometry in real proteins, these values can often
+exceed 100% (especially for Proline where we used a real ala-pro-ala
+tripeptide built from a real protein). Also, they will have very large
+%asa values when the residues are next to a chain break, such as at the
+N- or C-terminus of the protein (eg. the expectation is that they
+will be in Ala-X-Ala tripeptides, and not X-Ala or Ala-X)
+
+SOLVA_ERROR: max atoms per cube exceeded
+----------------------------------------
+Most of these sort of errors can be cured by increasing some
+of the parameters in the accall.pars file, and then recompiling
+the program. They are fairly self-explanatory and so I don't go through
+them all here. However, the error above should not really happen
+unless you are doing something odd. One common reason why the
+"max atoms per cube" error is produced is users try to run 
+Naccess on a PDB file from an NMR study which contains all
+the solutions in an ensemble of structures - this can be 20,30,
+40 or more very similar structures all laid on top of each 
+other (usually with the same chain label). Naccess can't handle
+this (and nor should it). The usual solution is to see if
+there is a single "average" structure for this protein in RCSB
+or to edit the file and just use the first structure from 
+the ensembl. 
+
+Best wishes
+

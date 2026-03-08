@@ -1,0 +1,9 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+## External binaries (users should compile their own)
+#freesasa
+#naccess
+#ppcheck_codes/hbond
+#ppcheck_codes/ncbs
