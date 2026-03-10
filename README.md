@@ -1,5 +1,5 @@
 # PIMA: Protein-Protein Interactions in Macromolecular Assemblies
-A python suite designed for the large-scale structural analysis of macromolecular assemblies, which serves as a high-performance local implementation of the **PIMA** (Protein-Protein Interaction in Macromolecular Assembly) and **PPCheck** methodologies developed at **Prof. R. Sowdhamini’s Lab (https://caps.ncbs.res.in/), NCBS**.
+A python suite designed for the large-scale structural analysis of macromolecular assemblies, which serves as a high-performance local implementation of the **PIMA** (Protein-Protein Interaction in Macromolecular Assembly) and **PPCheck** methodologies developed at **[Prof. R. Sowdhamini’s Lab](https://caps.ncbs.res.in/), NCBS**.
 
 This wrapper automates the extraction, energetic profiling, and hotspot prediction of protein-protein interfaces, with native support for large-scale assemblies (mmCIF) and multi-threaded execution.
 
